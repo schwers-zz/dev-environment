@@ -1,0 +1,36 @@
+[alias]
+	ai = add --interactive
+
+	c = commit
+	cm = commit -m
+	cma = commit -a -m
+	ca = commit --ammend
+
+	r = reset
+	r1 = reset HEAD^
+	r2 = reset HEAD^^
+
+	rh = reset --hard
+	rh1 = reset HEAD^ --hard
+	rh2 = reset HEAD^^ --hard
+
+	s = status
+	d = diff
+	a = add
+	co = checkout
+	b = branch
+	l = log
+	f = fetch
+	ps = push
+	pl = pull
+	cl = clone
+
+	rei = rebase -
+
+[user]
+	name = Ryan Schwers
+	email = schwers.r@gmail.com
+[color]
+	branch = auto
+	diff = auto
+	satus = auto
