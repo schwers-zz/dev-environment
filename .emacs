@@ -48,3 +48,10 @@
   "coffee-mode-hook"
   (set (make-local-variable 'tab-width) 4))
 (add-hook 'coffee-mode-hook '(lambda () (coffee-custom)))
+
+
+;;; SCSS Stuff
+(add-to-list 'load-path (expand-file-name "/Users/schwers/src/elisp/scss-mode"))
+(autoload 'scss-mode "scss-mode")
+(add-to-list 'auto-mode-alist '("\\.scss\\'" . scss-mode))
+(add-hook 'scss-mode '(lambda () (setq css-indent-offset 2)))
