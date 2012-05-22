@@ -20,6 +20,12 @@
 (setq ring-bell-function 'ignore)
 (global-linum-mode t)
 
+;;; OS X Stuff
+(setq mac-option-key-is-meta nil)
+(setq mac-command-key-is-meta t)
+(setq mac-command-modifier 'meta)
+(setq mac-option-modifier nil)
+
 ;;; Lisp/Clojure/Scheme
 (setq show-paren-delay 0
       show-paren-style 'parenthesis)
