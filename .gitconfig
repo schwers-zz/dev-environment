@@ -25,7 +25,8 @@
 	pl = pull
 	cl = clone
 
-	rei = rebase -
+	rei = rebase -i
+	now = commit --amend --date="$(date -R)"
 
 [user]
 	name = Ryan Schwers

@@ -43,6 +43,7 @@
 (autoload 'python-mode "python-mode" "Python Editing" t)
 (add-to-list 'auto-mode-alist '("\\.py\\'" . python-mode))
 (add-to-list 'interpreter-mode-alist '("python" . python-mode))
+(add-to-list 'auto-mode-alist '("\\.mako\\'" . html-mode))
 
 
 ;;; Coffee-Script Stuff
