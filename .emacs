@@ -35,6 +35,7 @@
 
 ;;; Color Theme Settings
 (load "/Users/schwers/src/elisp/theme")
+(set-default-font "Monaco 10")
 
 ;;; Python awessomeness
 (add-to-list 'load-path "/Users/schwers/src/elisp/python-mode/")
