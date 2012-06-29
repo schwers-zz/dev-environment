@@ -20,6 +20,10 @@ alias v=vim
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 # Finished adapting your PATH environment variable for use with MacPorts.
 
+export PATH=//opt/local/Library/Frameworks/Python.framework/Versions/2.7/bin:$PATH
+
+
+
 flush-mc() {
     echo "flush_all\n quit" | nc localhost 1121
 }
