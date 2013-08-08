@@ -8,8 +8,9 @@ if [ -f /opt/local/etc/bash_completion ]; then
     source /opt/local/etc/bash_completion
 fi
 
-PS1="\w:\[\033[31m\]\`ruby -e \"print (%x{git branch 2> /dev/null}.grep(/^\*/).first || '').gsub(/^\* (.+)$/, '(\1) ')\"\`\[\033[37m\]$ "
+PS1="\n\w:\[\033[31m\]\`ruby -e \"print (%x{git branch 2> /dev/null}.scan(/^\*.*/).first || '').gsub(/^\* (.+)$/, '(\1) ')\"\`\[\033[37m\]$\n"
 export PS1
+
 
 #Aliasses
 alias g=git
