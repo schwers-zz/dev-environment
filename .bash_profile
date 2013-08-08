@@ -1,4 +1,14 @@
-# Set git autocompletion and PS1 integration
+
+
+export PATH="/usr/local/bin:/usr/local/share/python:/usr/local/share/npm/bin:${PATH}"
+export PATH="/user/local/opt/ruby192/bin:${PATH}"
+
+
+alias g="git"
+alias v="vim"
+alias e="emacs"
+
+# Set git autocompletion and PS1 integration                                                                                                                                                                
 if [ -f /usr/local/git/contrib/completion/git-completion.bash ]; then
     source /usr/local/git/contrib/completion/git-completion.bash
 fi
@@ -11,20 +21,6 @@ fi
 PS1="\n\w:\[\033[31m\]\`ruby -e \"print (%x{git branch 2> /dev/null}.scan(/^\*.*/).first || '').gsub(/^\* (.+)$/, '(\1) ')\"\`\[\033[37m\]$\n"
 export PS1
 
-
-#Aliasses
-alias g=git
-alias e=emacs
-alias v=vim
-
-# MacPorts Installer addition on 2012-05-14_at_15:02:09: adding an appropriate PATH variable for use with MacPorts.
-export PATH=/opt/local/bin:/opt/local/sbin:$PATH
-# Finished adapting your PATH environment variable for use with MacPorts.
-
-export PATH=//opt/local/Library/Frameworks/Python.framework/Versions/2.7/bin:$PATH
-
-
-
 flush-mc() {
     echo "flush_all\n quit" | nc localhost 1121
 }
@@ -32,9 +28,15 @@ flush-mc() {
 run-ff() {
     while true
         do rm *.pyc
-	rm */*.pyc
-	flush-mc
+        rm */*.pyc
+        flush-mc
         python ff.py $*
-	sleep 1
+        sleep 1
     done
 }
+
+
+
+
+
+
